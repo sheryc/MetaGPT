@@ -71,6 +71,9 @@ class Context(BaseModel):
 
     _llm: Optional[BaseLLM] = None
 
+    def set_config(self, config: Config):
+        self.config = config
+
     def new_environ(self):
         """Return a new os.environ object"""
         env = os.environ.copy()

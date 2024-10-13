@@ -165,5 +165,4 @@ def merge_dict(dicts: Iterable[Dict]) -> Dict:
         result.update(dictionary)
     return result
 
-
-config = Config.default()
+# config = Config.default()
